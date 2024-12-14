@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Modern & Abstract</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="abstract-shape"></div>
+            <span class="loader-text">Gattu Uday Sharath</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+            <div class="logo">
+                <!-- <span class="logo-text">Portfolio</span> -->
+                <a href="https://github.com/Udaysharath" class="github-btn" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <div id="particles-js"></div>
+        <div class="abstract-background"></div>
+        <div class="floating-cube"></div>
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <h1 class="title">Hi, I am Gattu Uday Sharath
+                    <div class="aurora">
+                        <div class="aurora__item"></div>
+                        <div class="aurora__item"></div>
+                        <div class="aurora__item"></div>
+                        <div class="aurora__item"></div>
+                    </div>
+                </h1>
+                <div class="role-main">
+                    <p style="font-size: 32px; line-height: 68px; font-weight: 600;">I am a</p>
+                    <h2 class="typewriter-animation" id="role"></h2>
+                </div>
+                <p class="reveal-text delay-3" style="color: #F2F3F495; line-height: 32px; font-size: 20px; margin-bottom: 42px;">
+                    Full Stack Developer with over a year of experience specializing in building dynamic, high-performance web and mobile applications. My
+                    expertise spans both frontend and backend development, with a strong foundation in Python, Django, Javascript, React.js, Node.js, PostgreSQL, MongoDB, Mobile Developer and responsive design principles. I excel in creating efficient and scalable solutions, combining
+                    technical proficiency with logical problem-solving and innovative thinking.
+                </p>
+                <div class="hero-cta reveal-text">
+                    <a href="https://turquoise-shari-6.tiiny.site/" target="_blank" class="cta-button">Check My CV</a>
+                    <a href="#projects" class="cta-button secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="abstract-shape-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with 3D Cards -->
+    <section id="skills" class="skills-section">
+        <div class="skills-section-in">
+            <div class="section-title reveal-text">Skills</div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <i class="fab fa-react"></i>
+                            <span>React Js</span>
+                        </div>
+                        <div class="skill-card">
+                            <div style="background-color: #007BFF; padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js" />
+                            </div>
+                            <span>Next Js</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5/CSS3</span>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react native" />
+                            </div>
+                            <span>React Native</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" />
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
+                            <span>Flask</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <div style="background-color: #007BFF; padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="Express.js"  />
+                            </div>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Other</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <div style="background-color: #007BFF; padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="Socket.io" />
+                            </div>
+                            <span>Socket.io</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" alt="RabbitMQ" />
+                            <span>RabbitMQ</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-card">
+                            <div style="background-color: #007BFF; padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                            </div>
+                            <span>Git Hub</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="Postman" />
+                            <span>Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="experience-sec-in">
+            <h2 class="section-title reveal-text">Experience</h2>
+                <!-- <div>
+                    <img src="images\exp.svg" alt="Logo" class="exp-logo">
+                </div> -->
+                <div class="experience-card">
+                    <div class="css-7p547w">
+                        <article class="gXUJrc">
+                            <header class="jxZuEg">
+                                <a href="https://arthink.ai/" target="_blank" rel="noopener noreferrer">
+                                    <img src="images\logo3.webp" alt="Logo" class="bXwKnE">
+                                </a>
+                                <div class="haSzrG">
+                                    <h3 class="jYpsKT">Full Stack Engineer</h3>
+                                    <p class="hpfnSf">Oct 2023 - Present</p>
+                                </div>
+                            </header>
+                            <p class="sc-himrzO iVqghv">
+                                <span class="sc-gXmSlM QZsMX">Actively involved in web and mobile application development, with a strong emphasis on integrating AI/ML technologies. Committed to writing clean, maintainable code and producing well-structured documentation to foster seamless collaboration and maximize project efficiency.</span>
+                                <br>
+                                <section class="sc-cTQhss bVkNuX">
+                                    <b>Skills:</b>
+                                    <div class="sc-jOrMOR cyRorO">
+                                        <p class="sc-dPyBCJ igbEDO">• Web Development</p>
+                                        <p class="sc-dPyBCJ igbEDO">• Mobile Development</p>
+                                        <p class="sc-dPyBCJ igbEDO">• React.js</p>
+                                        <p class="sc-dPyBCJ igbEDO">• Next.js</p>
+                                        <p class="sc-dPyBCJ igbEDO">• JavaScript</p>
+                                        <p class="sc-dPyBCJ igbEDO">• TypeScript</p>
+                                        <p class="sc-dPyBCJ igbEDO">• React Native</p>
+                                        <p class="sc-dPyBCJ igbEDO">• Python</p>
+                                        <p class="sc-dPyBCJ igbEDO">• Django</p>
+                                        <p class="sc-dPyBCJ igbEDO">• Flask</p>
+                                        <p class="sc-dPyBCJ igbEDO">• Socket.io</p>
+                                        <p class="sc-dPyBCJ igbEDO">• Celery</p>
+                                        <p class="sc-dPyBCJ igbEDO">• PostgreSQL</p>
+                                    </div>
+                                </section>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="css-7p547w">
+                        <article class="gXUJrc">
+                            <header class="jxZuEg">
+                                <a href="https://eidiko.com/" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://eidiko.com/wp-content/uploads/2024/06/eidiko-logo.svg" alt="Logo" class="bXwKnE">
+                                </a>
+                                <div class="haSzrG">
+                                    <h3 class="jYpsKT">Project Intern</h3>
+                                    <p class="hpfnSf">Aug 2023 - Oct 2023</p>
+                                </div>
+                            </header>
+                            <p class="sc-himrzO iVqghv">
+                                <span class="sc-gXmSlM QZsMX">Developed an e-commerce web application with a focus on frontend development using React and Redux. Gained practical experience in state management with Redux, improving the application's efficiency and scalability.</span>
+                                <br>
+                                <section class="sc-cTQhss bVkNuX">
+                                    <b>Skills:</b>
+                                    <div class="sc-jOrMOR cyRorO">
+                                        <p class="sc-dPyBCJ igbEDO">• Web Development</p>
+                                        <p class="sc-dPyBCJ igbEDO">• React</p>
+                                        <p class="sc-dPyBCJ igbEDO">• HTML5/CSS3</p>
+                                        <p class="sc-dPyBCJ igbEDO">• JavaScript</p>
+                                        <p class="sc-dPyBCJ igbEDO">• Redux</p>
+                                    </div>
+                                </section>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="projects" class="projects-section">
+        <div class="projects-section-in">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-cards">
+                <article class="project-article">
+                    <div class="project-main-img">
+                        <img src="images\Screenshot 2024-12-11 175929.png" alt="Image" class="project-img">
+                    </div>
+                    <div class="project-skills">
+                        <span class="project-skill">Vue.js</span>
+                        <span class="project-skill">TailwindCSS</span>
+                        <span class="project-skill">Redux</span>
+                        <span class="project-skill">Node.js</span>
+                        <span class="project-skill">Express.js</span>
+                        <span class="project-skill">MongoDB</span>
+                        <span class="project-skill">Socket.io</span>
+                    </div>
+                    <div class="project-description">
+                        <h2 id="project-title-0" class="project-title">Chat APP</h2>
+                        <time class="project-time">Aug 2024 - Sep 2024</time>
+                        <p class="project-des">Real-time chat application, enabling one-to- one and group messaging. Implemented core functionalities using Vue.js, TailwindCSS and Redux. Designed and developed a scalable backend with Node.js and Express.js, MongoDB as the database. Integrated Socket.io for real-time communication, Implemented secure JWT-based authentication for user registration and login.</p>
+                    </div>
+                    <div class="project-live">
+                        <a href="https://dev-chat-app-taupe.vercel.app/" target="_blank" aria-label="GitHub repository for DeepView" class="project-live-link">
+                            <img src="images\icons8-link (1).svg" alt="Image">
+                        </a>
+                     </div>
+                </article>
+                
+                <article class="project-article">
+                    <div class="project-main-img">
+                        <img src="images\Screenshot 2024-12-02 110757.png" alt="Image" class="project-img">
+                    </div>
+                    <div class="project-skills">
+                        <span class="project-skill">Python</span>
+                        <span class="project-skill">Flask</span>
+                        <span class="project-skill">MongoDB</span>
+                        <span class="project-skill">Yolo Model</span>
+                        <span class="project-skill">Google Vision</span>
+                        <span class="project-skill">Open AI</span>
+                    </div>
+                    <div class="project-description">
+                        <h2 id="project-title-0" class="project-title">Media Watch center</h2>
+                        <time class="project-time">Sep 2024 - Dec 2024</time>
+                        <p class="project-des">Developed a newspaper monitoring system using Python (Flask) with AI integration . Implemented features for uploading and searching newspapers, displaying articles with summaries and translations. Integrated the YOLO model for image cropping and Google Cloud Vision for text detection. Designed the frontend using HTML , CSS , and JavaScript , providing an intuitive user experience.</p>
+                    </div>
+                    <div class="project-live">
+                        <a href="https://media.arthink.ai/template_render" target="_blank" aria-label="GitHub repository for DeepView" class="project-live-link">
+                            <img src="images\icons8-link (1).svg" alt="Image">
+                        </a>
+                     </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="experience-section">
+        <div class="experience-sec-in">
+            <h2 class="section-title reveal-text">Education</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="css-7p547w">
+                        <article class="gXUJrc">
+                            <header class="jxZuEg">
+                                <a href="https://www.mlritm.ac.in/" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://www.mlritm.ac.in/assets/images/logo.png" alt="Logo" class="bXwKnE">
+                                </a>
+                                <div class="haSzrG">
+                                    <h3 class="jYpsKT">Marri Laxman Reddy Institute of Technology and Management</h3>
+                                    <p class="gRMtVS">Bachelor of Technology - BTech, Civil Engineering</p>
+                                    <p class="hpfnSf">2018 - 2022</p>
+                                </div>
+                            </header>
+                            <p class="sc-gFGZVQ tKVWa"><b>Grade: </b>6.4 CGPA</p>
+                            <p class="sc-himrzO iVqghv">
+                                <span class="sc-gXmSlM QZsMX">I hold a Bachelor of Technology degree in Civil Engineering from Marri Laxman Reddy Institute of Technology and Management. During my academic journey, I developed a strong foundation in analytical thinking, problem-solving, and project management. While my core background is in civil engineering, I transitioned into technology, applying my engineering mindset to software development and emerging technologies. This unique blend of skills allows me to approach challenges with a structured and innovative perspective.</span>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="css-7p547w">
+                        <article class="gXUJrc">
+                            <header class="jxZuEg">
+                                <img src="images\TSBIE_Logo.jpg" alt="Logo" class="bXwKnE">
+                                <div class="haSzrG">
+                                    <h3 class="jYpsKT">ABV Junior College</h3>
+                                    <p class="gRMtVS">TGBIE(XII), Mathematics, Physics, and Chemistry (MPC)</p>
+                                    <p class="hpfnSf">2016 - 2018</p>
+                                </div>
+                            </header>
+                            <p class="sc-gFGZVQ tKVWa"><b>Grade: </b>80.9%</p>
+                            <p class="sc-himrzO iVqghv">
+                                <span class="sc-gXmSlM QZsMX">I completed my Class 12 education at ABV Junior College, specializing in Mathematics, Physics, and Chemistry (MPC).</span>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="css-7p547w">
+                        <article class="gXUJrc">
+                            <header class="jxZuEg">
+                                <img src="images\SAHS.jpg" alt="Logo" class="bXwKnE">
+                                <div class="haSzrG">
+                                    <h3 class="jYpsKT">Sri Aurobindo High High School</h3>
+                                    <p class="gRMtVS">SSC(X)</p>
+                                    <p class="hpfnSf">2015 - 2016</p>
+                                </div>
+                            </header>
+                            <p class="sc-gFGZVQ tKVWa"><b>Grade: </b>9.2 CGPA</p>
+                            <p class="sc-himrzO iVqghv">
+                                <span class="sc-gXmSlM QZsMX">I completed my Class 10 education at Sri Aurobindo High High School</span>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>CONTACT</h2>
+        <p>Feel free to reach out to me for any questions or collaboration!</p>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                  <input type="text" name="user_name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="user_email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>              
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="reveal-text">Contact</h3>
+                <div class="social-links">
+                    <a href="https://github.com/Udaysharath" class="social-link reveal-text delay-1">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gattu-uday-sharath-92a1111a6/" class="social-link reveal-text delay-2">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:gattuudaysharath224@gmail.com" class="social-link reveal-text delay-3">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p class="reveal-text delay-2">© 2024 Gattu Uday Sharath. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
