@@ -858,7 +858,7 @@ input, textarea {
 
 /* text main style animation */
 .title {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: 800;
     position: relative;
     overflow: hidden;
@@ -1127,6 +1127,34 @@ input, textarea {
 	background-color: var(--white);
 }
 
+.iama {
+    font-size: 32px; 
+    line-height: 68px; 
+    font-weight: 600;
+}
+
+.hero-description {
+    color: #F2F3F495; 
+    line-height: 32px; 
+    font-size: 20px; 
+    margin-bottom: 42px;
+}
+
+.footer-heart{
+    text-align: center;
+    font-family: open sans, sans-serif;
+}
+
+.footer-heart span:hover{color:#2196f3; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;}
+
+.emoji{vertical-align: middle;}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-content {
@@ -1151,6 +1179,27 @@ input, textarea {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    #role {
+        font-size: 24px;
+    }
+
+    .iama {
+        font-size: 24px;
+    }
+
+    .hero-description { 
+        line-height: 22px; 
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 0.5rem 1rem;
     }
 
     .cards-container {
@@ -1220,6 +1269,28 @@ input, textarea {
     .hero {
         height: 120vh;
         max-height: 200vh;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    #role {
+        font-size: 22px;
+    }
+
+    .iama {
+        font-size: 22px;
+    }
+
+    .hero-description { 
+        line-height: 18px; 
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        padding: 0.5rem 1rem;
     }
 
     .exp-logo {
