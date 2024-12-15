@@ -1266,11 +1266,6 @@ input, textarea {
         padding: 12px 8px;
     }
 
-    .hero {
-        height: 120vh;
-        max-height: 200vh;
-    }
-
     .title {
         font-size: 28px;
     }
